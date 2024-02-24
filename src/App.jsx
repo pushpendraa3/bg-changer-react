@@ -1,13 +1,8 @@
 import { useState } from "react"
 
-
-
-
-
 function App() {
   const [color, setcolor] = useState("olive");
-
-
+  
   const generateColor = () => {
     const randomColor = Math.floor(Math.random()*16777215).toString(16);
     const hexColor = "#" + randomColor;
